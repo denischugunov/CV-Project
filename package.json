@@ -7,9 +7,12 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "build-css": "sass src/style.scss src/style.css"
+    "build-css": "sass src/style.scss src/style.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "sass": "^1.80.6",
     "typescript": "~5.6.2",
     "vite": "^5.4.10"
